@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi primera página web</title>
 </head>
+
 <body>
-<!-- header es para la cabecera de la página -->
-<!-- nav es para la barra de navegación -->
-<!-- section es para el contenido principal -->
-<!-- aside es para contenido secundario o complementario -->
+    <!-- header es para la cabecera de la página -->
+    <!-- nav es para la barra de navegación -->
+    <!-- section es para el contenido principal -->
+    <!-- aside es para contenido secundario o complementario -->
 
     <header>
         <h1>Universidad Central del Ecuador</h1>
@@ -22,43 +24,116 @@
         <h4>Estudiante</h4>
 
         <!-- Párrafos -->
-         <p>Mi primer parrafo</p>
-         <p>Lorem ipsum dolor sit.</p>
+        <p>Mi primer parrafo</p>
+        <p>Lorem ipsum dolor sit.</p>
 
-         <!-- Textos -->
-          <strong>textos que quiero resaltar</strong>
-          
-          <!--br es para saltar de línea-->
-          <br>
-          <em>textos en cursiva y resaltado</em>
-          <i>texto en cursiva</i>
-          <u>texto subrayado</u>
+        <!-- Textos -->
+        <strong>textos que quiero resaltar</strong>
 
-          <!--hr es para una línea horizontal-->
-          <hr>
-          <s>texto tachado</s>
-          <mark>texto resaltado</mark>
+        <!--br es para saltar de línea-->
+        <br>
+        <em>textos en cursiva y resaltado</em>
+        <br>
+        <i>texto en cursiva</i>
+        <br>
+        <u>texto subrayado</u>
 
-          <!-- Listas -->
-           <!-- Lista desordenada -->
-           <ul>
-               <li>Lunes</li>
-               <li>Martes</li>
-               <li>Miércoles</li>
-                <li>Jueves</li>
-                <li>Viernes</li>
-           </ul>
+        <!--hr es para una línea horizontal-->
+        <hr>
+        <s>texto tachado</s>
+        <mark>texto resaltado</mark>
 
-            <!-- Lista ordenada con numerales -->
-              <ol type="1">
-                <li>Primero</li>
-                <li>Segundo</li>
-                <li>Tercero</li>
-                <li>Cuarto</li>
-                <li>Quinto</li>
-              </ol>
+        <!-- Listas -->
+        <!-- Lista desordenada -->
+        <ul>
+            <li>Lunes</li>
+            <li>Martes</li>
+            <li>Miércoles</li>
+            <li>Jueves</li>
+            <li>Viernes</li>
+        </ul>
 
-              <!-- Tablas -->
+        <!-- Lista ordenada con numerales -->
+        <ol type="1">
+            <li>Primero</li>
+            <li>Segundo</li>
+            <li>Tercero</li>
+            <li>Cuarto</li>
+            <li>Quinto</li>
+        </ol>
+
+        <!-- Tablas -->
+        <table border="1">
+            <thead> <!-- Encabezado de la tabla -->
+                <tr> <!-- Fila de la tabla -->
+                    <th>Nombre</th><!-- Columna-->
+                    <th>Apellido</th><!-- Columna-->
+                    <th>Cedula</th><!-- Columna-->
+                    <th>Accion</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Juan</th>
+                    <th>Perez</th>
+                    <th>0102030405</th>
+                    <th><button>Editar</button></th>
+                </tr>
+                <tr>
+                    <td>Maria</td>
+                    <td>Gonzalez</td>
+                    <td>0607080910</td>
+                    <td><button>Editar</button></td>
+                </tr>
+                <tr>
+                    <td>Carlos</td>
+                    <td>Lopez</td>
+                    <td>1112131415</td>
+                    <td><button>Editar</button></td>
+                </tr>
+                <tr></tr>
+                <td>Laura</td>
+                <td>Martinez</td>
+                <td>1617181920</td>
+                <td><button>Editar</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Contenedores HTML -->
+        <div>
+            <button>Actualizar</button>
+            <button>Eliminar</button>
+            <button>Guardar</button>
+        </div>
+        <!-- header, considerado contenedor -->
+
+        <!-- Formularios -->
+        <!-- cjto elementos para capturar info-->
+
+        <form action="https://www.google.com">
+            <h1>Estudiante</h1>
+            <label for="id_nombre">Nombre:</label>
+            <input id="id_nombre" type="text">
+            <label for="id_email">Email:</label>
+            <input id="id_email" type="email">
+            <label for="id_fecha_nacimiento">Fecha Nacimiento:</label>
+            <input id="id_fecha_nacimiento" type="date">
+            <label for="id_password">Password:</label>
+            <input id="id_password" type="password">
+            <button>Guardar</button>
+        </form>
+
+        <!-- Multimedia -->
+        <img src="https://i.redd.it/o10frgof0wcc1.jpeg" alt="No se puede cargar la imagen" width="200" height="200">
+        <img src="./img/Nino.jpg" alt="No se puede cargar la imagen" width="200" height="200">
+        <img src="https://i.pinimg.com/originals/13/20/ab/1320ab8c325762abe19b801cde3186f5.gif" alt=":(">
+
+        <video controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        </video>
+
+
     </section>
     <aside></aside>
     <footer>Av. America entre la gasca y Bolivia
@@ -68,4 +143,5 @@
 
 
 </body>
+
 </html>
