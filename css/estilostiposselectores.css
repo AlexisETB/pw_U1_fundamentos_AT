@@ -1,0 +1,53 @@
+.titulos {
+    color: red;
+    font-size: 30px;
+    background-color: black;
+
+}
+
+/* Selector por ID */
+#id_titulo {
+    color: #00FFDF;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #F52773;
+}
+
+/* Pseudo-clase (Eventos) */
+
+i:hover {
+    color: blue;
+    font-size: 50px;
+
+}
+
+input:focus {
+    border-color: rgb(201, 49, 201);
+    border-width: 5px;
+    background-color: wheat;
+}
+
+/* Selector por atributo */
+[id] {
+    color: blue;
+    font-size: 40px;
+}
+
+img[alt="No se puede cargar la imagen1"] {
+    width: 80px;
+    height: 50px;
+}
+
+img[alt="No se puede cargar la imagen2"] {
+    width: 30px;
+    height: 10px;
+}
+
+/* img[alt*="uce"] {
+    width: 100px;
+    height: 10px;
+} */
+
+/* Selector universal */
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
