@@ -162,7 +162,111 @@ function fundamentosJS() {
         console.log("El profesor tiene 36 años");
     }
 
+
     for (let clave in profesor) {
         console.log(profesor[clave]);
     }
+
+    const e1 = {
+        nombre: "Edison",
+        apellido: "Cayambe",
+        edad: 35,
+        ecuatoriano: true,
+        genero: 'M',
+        ciudad: 'Quito'
+    };
+    const e2 = {
+        nombre: "Edison",
+        apellido: "Cayambe",
+        edad: 35,
+        ecuatoriano: true,
+        genero: 'M',
+        ciudad: 'Quito'
+    };
+
+    const arregloObjetos = [e1, e2, {
+        nombre: "Edison3",
+        apellido: "Cayambe",
+        edad: 35,
+        ecuatoriano: true,
+        genero: 'M',
+        ciudad: 'Quito'
+    }];
+    console.log(arregloObjetos);
+    console.log(arregloObjetos[2]);
+
+    /* Desestructuracion */
+    //arreglos
+
+    const arr1 = [1, 2, 3, 4, 5, 6, 7];
+    const [a, b, c, d, e] = arr1;
+    console.log(a);
+    console.log(b);
+    console.log(c);
+    console.log(d);
+    console.log(e);
+
+    const [primero, , , , , , ultimo] = arr1;
+    console.log(primero);
+    console.log(ultimo);
+
+    const [pos1, pos2] = [1, 2, 3, 4, 5, 6, 7];
+    imprime(arr1);
+
+    //Objetos
+    const e3 = {
+        nombre: "Edison",
+        apellido: "Cayambe",
+        edad: 35,
+        ecuatoriano: true,
+        genero: 'M',
+        ciudad: 'Quito'
+    };
+    const { nombre: n, ciudad: ciu } = e3;
+    console.log(n);
+    console.log(ciu);
+
+    const { nombre: n1, apellido: a1 } = {
+        nombre: "Edison",
+        apellido: "Cayambe",
+        edad: 35,
+        ecuatoriano: true,
+        genero: 'M',
+        ciudad: 'Quito'
+    };
+    console.log(n1);
+    console.log(a1);
+
+    const e4 = {
+        nombre: "Edison",
+        apellido: "Cayambe",
+        edad: 35,
+        ecuatoriano: true,
+        genero: 'M',
+        ciudad: 'Quito',
+        direccion: {
+            calle: "Av. Siempre Viva",
+            barrio: "Springfield",
+            numeracion: 742,
+        }
+    };
+
+    console.log(e4.direccion.barrio);
+
+    const { edad: eda1, direccion } = e4;
+    console.log(eda1);
+    console.log(direccion);
+    const { calle } = direccion;
+    console.log(calle);
+
+    const { direccion: { numeracion, barrio, calle: calle2 } } = e4;
+    console.log(numeracion);
+    console.log(barrio);
+    console.log(calle2);
+}
+
+function imprime([a, b, c]) {
+    console.log(a);
+    console.log(b);
+    console.log(c);
 }
