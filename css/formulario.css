@@ -1,0 +1,70 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+body {
+    background-color: #07003a;
+}
+
+p:before {
+    content: attr(type);
+    display: block;
+    font-size: 20px;
+    color: white;
+    margin-top: 30px;
+}
+
+input {
+    width: 200px;
+    border: none;
+    border-bottom: 2px solid rgb(10, 150, 237);
+    background: none;
+    color: rgb(168, 203, 225);
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 3px solid #52c0ff;
+
+}
+
+h2,
+header {
+    color: white;
+    border-bottom: 2px solid #052f66;
+    font-size: 25px;
+}
+
+
+footer {
+    color: white;
+}
+
+.formulario {
+    border: 2px solid #052f66;
+    background-color: #001f4d;
+    padding: 15px 20px;
+    border-radius: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-shadow: 10px 10px #021027;
+
+}
+
+button {
+    cursor: pointer;
+    margin-top: 15px;
+    border-radius: 20px;
+    border: none;
+    background: #0059b3;
+    font-size: 18px;
+    color: white;
+    padding: 10px 15px;
+}
+
+.centrar-boton {
+    display: flex;
+    justify-content: center;
+}
