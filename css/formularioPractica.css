@@ -1,0 +1,114 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 50px;
+    padding: 50px;
+}
+
+.tarjeta {
+    background-color: #ffffff;
+    padding: 15px 20px;
+    border-radius: 15px;
+    justify-content: left;
+    align-items: left;
+}
+
+body {
+    background-color: #ececec;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+p:before {
+    content: attr(type);
+    display: block;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+input {
+    width: 200px;
+    height: 30px;
+    border: 1px solid #8f8f8f;
+    background: none;
+    color: black;
+    border-radius: 5px;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 2px solid #494949;
+
+}
+
+header {
+    color: #044259;
+    font-family: 'poppins', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.formulario {
+    padding: 15px 20px;
+    border-radius: 15px;
+    font-family: 'poppins', sans-serif;
+    font-weight: 700;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.exp-date,
+.cvv {
+    flex: 1;
+}
+
+button {
+    cursor: pointer;
+    margin-top: 15px;
+    border-radius: 7px;
+    border: none;
+    background-color: #6142ef;
+    color: white;
+    font-family: 'poppins', sans-serif;
+    font-weight: 700;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    height: 40px;
+    width: 250px;
+}
+
+button:hover {
+    background-color: #5a3bd6;
+}
+
+
+.centrar-boton {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.msg_error {
+    background: rgb(230, 140, 140);
+    color: red;
+    border-left: 5px solid darkred;
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: none;
+    font-weight: bold;
+}
+
+.error_asterisco {
+    color: red;
+    font-weight: bold;
+}
