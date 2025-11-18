@@ -16,24 +16,33 @@
                 height="120px">
         </div>
         <div class="formulario">
-            <header>Payment Details</header>
+            <h2>Payment Details</h2>
             <nav></nav>
             <section>
                 <form action="#">
                     <div id="id_msg_error" class="msg_error"></div>
-                    <p type="Cardholder name: "><input id="id_cardholder_name" type="text" placeholder="Mrs Kate Smith">
-                        <span id="id_error_cardhold" class="error_asterisco"></span>
-                    </p>
-                    <p type="Card number: "><input id="id_card_number" type="text" placeholder="0000 0000 0000 0000">
-                        <span id="id_error_cardNumber" class="error_asterisco"></span>
-                    </p>
+                    <div class="form-column">
+                        <div class="Cardholder">
+                            <p type="Cardholder name: "><input id="id_cardholder_name" type="text"
+                                    placeholder="Mrs Kate Smith">
+                                <span id="id_error_cardhold" class="error_asterisco"></span>
+                            </p>
+                        </div>
+                        <div class="Cardnumber">
+
+                            <p type="Card number: "><input id="id_card_number" type="text"
+                                    placeholder="0000 0000 0000 0000">
+                                <span id="id_error_cardNumber" class="error_asterisco"></span>
+                            </p>
+                        </div>
+                    </div>
                     <div class="form-row">
                         <div class="exp-date">
                             <p type="Exp date: "><input id="id_expiration_date" type="date"> <span
                                     id="id_error_expirationDate" class="error_asterisco"></span></p>
                         </div>
                         <div class="cvv">
-                            <p type="CVV: "><input id="id_cvv" type="text" placeholder="000"><span id="id_error_cvv"
+                            <p type="CVV: "><input id="id_cvv" type="password" placeholder="000"><span id="id_error_cvv"
                                     class="error_asterisco"></span></p>
                         </div>
                     </div>

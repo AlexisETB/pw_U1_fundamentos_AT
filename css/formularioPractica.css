@@ -2,7 +2,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
     gap: 50px;
     padding: 50px;
 }
@@ -31,7 +30,7 @@ p:before {
 }
 
 input {
-    width: 200px;
+    width: 250px;
     height: 30px;
     border: 1px solid #8f8f8f;
     background: none;
@@ -55,20 +54,42 @@ header {
 }
 
 .formulario {
-    padding: 15px 20px;
+    padding: 15px 30px;
     border-radius: 15px;
     font-family: 'poppins', sans-serif;
     font-weight: 700;
 }
 
+.form-column {
+    display: flex;
+    flex-direction: column;
+
+}
+
 .form-row {
     display: flex;
-    gap: 15px;
+    gap: 20px;
 }
 
 .exp-date,
 .cvv {
     flex: 1;
+}
+
+#id_cardholder_name {
+    width: 250px;
+}
+
+#id_card_number {
+    width: 250px;
+}
+
+#id_expiration_date {
+    width: 115px;
+}
+
+#id_cvv {
+    width: 115px;
 }
 
 button {
@@ -106,6 +127,7 @@ button:hover {
     margin-bottom: 10px;
     display: none;
     font-weight: bold;
+    width: 250px;
 }
 
 .error_asterisco {
